@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+# Source debconf library.
+. /usr/share/debconf/confmodule
+
+
+case "$1" in
+    configure)
+    ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+    triggered)
+    ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

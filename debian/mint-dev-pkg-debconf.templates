@@ -1,0 +1,4 @@
+Template: foo/see_prompt
+Type: boolean
+Description: Do you see this prompt?
+ We'd like to know if you can see this question.

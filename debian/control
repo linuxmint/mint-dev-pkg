@@ -1,0 +1,34 @@
+Source: mint-dev-pkg
+Section: admin
+Priority: optional
+Maintainer: Linux Mint <root@linuxmint.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: mint-dev-pkg
+Architecture: all
+Depends: mint-dev-pkg-dep
+Recommends: mint-dev-pkg-rec
+Description: A dummy package for testing purpose
+ This package depends/recommends/suggests other packages.
+
+Package: mint-dev-pkg-dep
+Architecture: all
+Description: A dummy package for testing purpose
+ This package is a dependency of mint-dev-pkg.
+
+Package: mint-dev-pkg-rec
+Architecture: all
+Recommends: mint-dev-pkg-rec2
+Description: A dummy package for testing purpose
+ This package is recommended by mint-dev-pkg.
+
+Package: mint-dev-pkg-rec2
+Architecture: all
+Description: A dummy package for testing purpose
+ This package is recommended by mint-dev-pkg-rec2.
+
+Package: mint-dev-pkg-debconf
+Architecture: all
+Description: A dummy package for testing purpose
+ This package uses debconf.
